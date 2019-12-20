@@ -1,0 +1,469 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40723104 CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40723104 CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='NX12翻譯.html'>NX12翻譯</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='Solvespace 編譯.html'>Solvespace 編譯</a><li><a href='Solvespace 繪圖.html'>Solvespace 繪圖</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='Solvespace.html'>Next</a> >> Solvespace<br /><h1>NX12翻譯</h1>
+<p></p>
+<p>現在我們將擠壓這個多邊形</p>
+<ul>
+<li>選擇插入→設計特徵→拉伸</li>
+<li>選擇要擠出的六角形</li>
+<li>輸入結束距離為<span>1876</span>英寸</li>
+</ul>
+<p>擠出後，模型看起來像右圖。<img alt="" height="249" src="./../images/123.jpg" width="225"/></p>
+<ul>
+<li>在直徑為<span>387</span>英寸的圓柱體的頂部，</li>
+</ul>
+<p>插入另一個具有以下尺寸的氣缸。</p>
+<p>直徑<span>= 0.387</span>英寸</p>
+<p>高度<span>= 0.1875</span>英寸</p>
+<p>由於模型處於“靜態線框”中，因此您只能看到該圓柱體</p>
+<p>在六角頭內。 該模型將如下所示。</p>
+<p><span> <img alt="" height="335" src="./../images/456.jpg" width="518"/></span></p>
+<p>現在，我們將使用特徵操作相交。</p>
+<ul>
+<li>選擇插入→設計特徵→球體</li>
+<li>選擇中心點和直徑</li>
+<li>選擇最後繪製的圓柱體的底部（該圓柱體位於六角頭內，並且具有</li>
+</ul>
+<p>直徑<span>0.387</span>英寸，高度<span>0.1875</span>英寸），如下所示</p>
+<ul>
+<li>給出<span>55</span>作為直徑</li>
+<li>在“<span>Boolean</span>”對話框中選擇“<span>Intersect</span>”</li>
+</ul>
+<p>它將要求您選擇目標實體</p>
+<ul>
+<li>選擇六角頭</li>
+<li>點擊確定</li>
+</ul>
+<p>如圖所示，這將為您提供六角螺栓。</p>
+<p>注意：可以在螺栓帽子上創建此混合功能</p>
+<p>也可以通過圍繞其軸的截面旋轉切割，</p>
+<p>可以嘗試一下。</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p>現在，我們將在六角螺栓上添加螺紋。</p>
+<ul>
+<li>選擇插入→設計特徵→螺紋</li>
+<li>單擊詳細單選按鈕</li>
+<li>保持旋轉正確</li>
+<li>點擊螺栓軸（長六角頭下方的圓柱）</li>
+</ul>
+<p>選擇軸後，所有值將顯示在“線程”窗口中。 保留全部默認值。</p>
+<ul>
+<li>點擊確定</li>
+</ul>
+<p>六角螺栓現在應如圖所示</p>
+<p>正確的。 保存模型。</p>
+<p></p>
+<p><span> </span></p>
+<p><span>4.7.2</span>六角螺母</p>
+<ul>
+<li>創建一個新文件並將其另存為<span>Impeller_hexa-nut.prt</span></li>
+<li>選擇插入→曲線→多邊形</li>
+<li>輸入的邊數為<span>6</span></li>
+<li>創建一個六邊形，每邊尺寸為<span>28685</span>英寸，並在原點構造</li>
+<li>選擇插入→設計特徵→拉伸</li>
+<li>選擇要擠出的六角形並輸入末端距離為<span>125</span>英寸</li>
+</ul>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p>顯示了模型圖</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<ul>
+<li>選擇插入→設計特徵→球形</li>
+<li>輸入點中的中心點位置對話框窗口如下</li>
+</ul>
+<p><span>XC = 0; YC = 0; ZC = 0.125</span></p>
+<ul>
+<li>輸入直徑值<span>57</span>英寸</li>
+<li>在布爾運算對話框中，選擇相交並單擊確定</li>
+</ul>
+<p>該模型將如下所示。 我們現在使用<span>Mirror</span>命令創建另一個核心</p>
+<ul>
+<li>選擇編輯→變換</li>
+<li>選擇模型並單擊確定</li>
+<li>單擊通過平面鏡像</li>
+<li>單擊模型的平面，如圖所示。 注意不要選擇任何邊緣</li>
+</ul>
+<p></p>
+<p><span> </span></p>
+<ul>
+<li>點擊確定</li>
+<li>點擊複製</li>
+<li>點擊取消</li>
+</ul>
+<p>您將獲得以下模型</p>
+<ul>
+<li>選擇“插入”→“合併實體”→“合併”</li>
+<li>選擇兩個部分並將它們合併</li>
+<li>插入一個圓柱體，其向量指向<span>ZC</span>方向，並且以下內容</li>
+</ul>
+<p>尺寸：<span>         </span></p>
+<p>直徑<span>= 0.25</span>英寸</p>
+<p>高度<span>= 1</span>英寸</p>
+<ul>
+<li>將圓柱體放在原點上並減去該圓柱體從六角螺母</li>
+</ul>
+<p>現在，我們將倒角螺母的內部邊緣</p>
+<ul>
+<li>選擇插入→詳細特徵→倒角</li>
+<li>如圖所示，選擇兩個內部邊緣，然後單擊“確定”。</li>
+<li>輸入“距離”為<span>0436</span>英寸，然後單擊“確定”。</li>
+</ul>
+<p>您將在螺母上看到倒角。 保存模型。</p>
+<p></p>
+<p><span> </span></p>
+<p><span>4.7.3 L-Bar</span></p>
+<p>在這裡，我們將利用一些原語和特徵操作，例如<span>Edge Blend</span>，<span>Chamfer</span>和<span>Subtract</span>。 應該注意的是，通過<span>2D</span>草圖繪製和拉伸可以更有效地創建相同的模型，但是此處使用圖元使用戶熟悉這些功能。</p>
+<ul>
+<li>創建一個新文件並將其另存為<span>Arborpress_L-bar</span></li>
+<li>選擇插入→設計特徵→塊</li>
+<li>創建具有以下尺寸的塊：</li>
+</ul>
+<p>長度<span>= 65</span>英寸</p>
+<p>寬度<span>= 65</span>英寸</p>
+<p>高度<span>= 285</span>英寸</p>
+<ul>
+<li>在原點創建塊</li>
+<li>創建另一個塊，該塊也放置在具有以下尺寸的原點處：</li>
+</ul>
+<p>長度<span>= 182</span>英寸</p>
+<p>寬度<span>= 65</span>英寸</p>
+<p>高度<span>= 85</span>英寸</p>
+<p>我們必須將第二個塊移到第一個塊的頂部：</p>
+<ul>
+<li>單擊編輯→移動對象</li>
+<li>選擇第二個塊（綠色），然後單擊“確定”。</li>
+<li>選擇運動作為距離</li>
+<li>在“指定向量”對話框中選擇正<span>ZC</span></li>
+<li>輸入<span>200</span>作為距離值</li>
+<li>確保已選中“移動原件”按鈕，然後單擊“確定”。</li>
+<li>單擊“移動”，然後在下一個窗口中單擊“取消”，以便不重複該操作</li>
+</ul>
+<p></p>
+<p><span> </span></p>
+<p>現在我們將創建一個孔。 有幾種創建孔的方法。 我們將首先創建一個圓柱體，然後使用減法函數來實現。</p>
+<ul>
+<li>選擇插入→設計特徵→氣缸</li>
+<li>在“指定向量”上，選擇“<span> YC</span>軸”圖標</li>
+<li>在“指定點”中，輸入以下值：</li>
+</ul>
+<p><span>XC = 130 YC = -5 ZC = 242</span></p>
+<ul>
+<li>圓柱體應具有以下尺寸：</li>
+</ul>
+<p>直徑<span>= 35</span>英寸</p>
+<p>高度<span>= 100</span>英寸</p>
+<ul>
+<li>在“布爾值”下拉窗口下，選擇“減”</li>
+<li>選擇頂部的水平塊</li>
+</ul>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p></p>
+<p><span> </span></p>
+<p>該孔應看起來像圖中的孔。 現在，我們將創建另一個圓柱體並將其從上方的塊中減去<span>.</span></p>
+<p>圓柱體應指向在以下位置設置的正<span>Y</span>方向：<span>XC = 130; YC = 22.5</span>和<span>ZC = 242</span>，並且應具有以下尺寸：直徑<span>= 66</span>英寸； 高度<span>= 20</span>英寸</p>
+<ul>
+<li>使用布爾值下拉菜單從與以前相同的塊中減去此圓柱體</li>
+</ul>
+<p>現在我們將創建一個塊。</p>
+<ul>
+<li>選擇插入→設計特徵→塊</li>
+<li>創建具有以下尺寸的塊：</li>
+</ul>
+<p>長度<span>= 25</span>英寸寬度<span>= 20</span>英寸高度<span>= 150</span>英寸<span>\</span></p>
+<ul>
+<li>單擊“起源”框中的“點對話框”圖標，然後輸入以下值：</li>
+</ul>
+<p><span>XC = 157; YC = 22.5</span>；<span> ZC = 180</span></p>
+<p>該模型將看起來像右邊的圖。 現在，我們將從帶有孔的塊中減去該塊。</p>
+<ul>
+<li>選擇“插入”→“合併實體”→“減去”</li>
+<li>單擊以兩個孔（綠色）為目標的塊</li>
+<li>選擇新創建的塊作為工具</li>
+<li>點擊確定</li>
+</ul>
+<p><span> </span></p>
+<p>該模型將如圖所示。 現在，我們將在功能操作中使用混合功能。 我們必須首先將兩個區塊結合起來。</p>
+<ul>
+<li>選擇“插入”→“合併實體”→“合併”</li>
+<li>單擊兩個塊，然後單擊確定</li>
+</ul>
+<p>現在將這兩個塊合併為一個實體模型。</p>
+<ul>
+<li>選擇插入→詳細特徵→邊緣融合</li>
+<li>將半徑更改為<span>60</span></li>
+<li>在兩個塊的界面處選擇邊</li>
+<li>點擊確定</li>
+</ul>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p>重複相同的步驟以混合圖塊的內部邊緣。 這次，半徑應更改為<span>30</span>。</p>
+<p>現在，我們將在模型中製作四個孔。 您可以使用“孔”選項創建這些孔。 但是，要練習使用特徵操作，我們將從塊中減去圓柱。</p>
+<ul>
+<li>分別插入四個氣缸。 它們應指向正<span>XC</span>方向，並具有以下尺寸。</li>
+</ul>
+<p>直徑<span>= 8</span>英寸</p>
+<p>高度<span>= 20</span>英寸</p>
+<ul>
+<li>在<span>XC</span>方向上的以下點坐標處構造它們：</li>
+</ul>
+<p>氣缸＃<span>1</span>：<span>X = 162; Y = 11.25</span>；<span> Z = 210</span></p>
+<p>氣缸＃<span>2</span>：<span>X = 162; Y = 11.25</span>；<span> Z = 275</span></p>
+<p><span>3</span>號缸：<span>X = 162</span>；<span> Y = 53.75</span>；<span> Z = 210</span></p>
+<p>氣缸<span>4</span>：<span>X = 162; Y = 53.75</span>；<span> Z = 275</span></p>
+<ul>
+<li>從布爾值對話框的塊中減去這些圓柱</li>
+</ul>
+<p>此模型的最後一個操作是創建一個塊並將其從頂部塊中減去。</p>
+<ul>
+<li>創建具有以下尺寸的塊：</li>
+</ul>
+<p>長度<span>= 60</span>英寸寬度<span>= 20</span>英寸高度<span>= 66</span>英寸</p>
+<ul>
+<li>在“點”對話框中輸入以下值作為塊的原點</li>
+</ul>
+<p><span>XC = 130 YC = 22.5 ZC = 209.5</span></p>
+<ul>
+<li>創建塊後，從頂部的塊中減去該塊</li>
+</ul>
+<p>最終的數字將如下所示。 保存並關閉文件。</p>
+<p></p>
+<p><span> </span></p>
+<p><span>4.7.4 Rack</span></p>
+<ul>
+<li>創建一個新的零件文件並將其另存為<span>prt</span></li>
+<li>右鍵單擊，然後選擇“定向視圖”→“等軸測”</li>
+<li>選擇插入→曲線→矩形</li>
+</ul>
+<p>點窗口將打開。 注意提示線說明。 提示線提供了下一步需要執行的步驟。 您需要定義矩形的拐角點。</p>
+<p>對於角點<span>1</span>，</p>
+<ul>
+<li>輸入坐標<span>XC = 0</span>，<span>YC = 0</span>，<span>ZC = 0</span>，然後單擊“確定”</li>
+</ul>
+<p>將會彈出另一個<span>Point Constructor</span>窗口，您可以定義第二個<span>Corner Point</span></p>
+<ul>
+<li>輸入坐標<span>XC = 240</span>，<span>YC = 25</span>，<span>ZC = 0</span>，然後單擊“確定”，然後單擊“取消”</li>
+<li>右鍵單擊屏幕，然後選擇<span>FIT</span></li>
+</ul>
+<p>注意：創建矩形有三個選項：</p>
+<ul>
+<li>兩點</li>
+<li>三點</li>
+<li>按中心</li>
+</ul>
+<br />Develop << <a href='Develop.html'>Previous</a> <a href='Solvespace.html'>Next</a> >> Solvespace</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
